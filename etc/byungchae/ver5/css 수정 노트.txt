@@ -1,0 +1,33 @@
+/*마이 페이지*/
+
+.my_page{width:535px; height:580px; border-radius:30px;}
+
+.my_img{width:100px; height:100px; border-radius:50%; background:url(../uitility/photo/cardimg1.png);}
+
+.item:nth-child(1){flex-basis:100px;}
+
+.item:nth-child(2){flex-basis:150px}
+
+.item:nth-child(3){flex-basis:230px; text-align:center;}
+
+.item:nth-child(4){flex-basis:60px;}
+
+/*거래 내역*/
+
+.transactionHistory-item:nth-child(1){height:115px;}
+
+.transactionHistory-item:nth-child(2){height:335px; width:100%;}
+
+.transactionHistory-item:nth-child(3){height:130px;}
+
+/* font */
+
+.has_font-xxl{font-size:var(--font-size-xxl);} 추가
+
+/* has */
+
+.has_flex_column{display:flex; flex-direction:column;} 추가
+
+.has_evenly{justify-content:space-evenly;} 추가
+
+.has_between{justify-content:space-between;} 추가

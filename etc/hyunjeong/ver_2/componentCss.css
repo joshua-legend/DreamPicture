@@ -1,0 +1,53 @@
+:root {
+    /* Color */
+    --color-gray: #848484;
+    --color-alabaster: #F9F9F9;
+    --color-swiss-coffee: #E3D6D6;
+    --color-brandy-rose: #BC8484;
+    --color-puce: #CE9292;
+    --color-albescent-white: #F7E3DA;
+    --color-turbo: #FEE500;
+    --color-porcelain: #F3F7F7;
+    --color-aqua-island: #91D0D7CC;
+    --color-powder-blue: #ADDBE1;
+    --color-jagged-ice: #C8E7EB;
+    --color-chathams-blue: #17517E;
+
+    /*Font-size*/
+    --font-size-medium: 18px;
+
+
+
+    /*Width*/
+    --width-size-half: 225px;
+    --width-size-full: 540px;
+
+}
+
+@font-face {
+    font-family: 'BMHANNAPro';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {font-family: 'BMHANNAPro'; list-style: none;}
+
+/* input */
+
+option{font-size: var(--font-size-base);color: black;}
+
+input, textarea, select{border-radius:8px; outline:none;text-indent:10px;height:64px;border: 2px solid var(--color-jagged-ice); font-size: var(--font-size-xl);}
+
+.has_width_half{width: var(--width-size-half);}
+
+.has_width_full{width: var(--width-size-full);}
+
+.checkbox{align-items: center;}
+
+.checkbox > input {height: 15px;}
+
+.is_login_input {width:350px;height:45px;color:var(--color-gray);background-color:var(--color-albescent-white);border:none;}
+.is_login_input::placeholder{color:var(--color-alabaster);}
+
+

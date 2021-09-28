@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'BMHANNAPro';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --light-cyan : #91D0D7;
+    --bright-scarlt: #F7E3DA;
+    --light-red : #CE9292;
+    --dark-blue : #365E75;
+    --dark-gray : #828282;
+}
+
+body{display:flex;}
+*{font-family:BMHANNApro;}
+
+/*구매자 카드*/
+.dealingcard-buyer>div{display:inline-block;}
+
+.dealingcard-buyer{ /*베이스 div*/
+    width:255px; height:446px;
+    background-color: var(--bright-scarlt); border-radius:4px;
+    color:white; text-align:center;
+}
+
+.dealingcard-buyer>div:nth-child(1){/*구매자 사진*/
+    width:125px; height:125px;
+    border-radius:50%; background:url(img/cardimg2.png);
+    margin-top:53px;
+}
+
+.dealingcard-buyer>div:nth-child(2){ /*구매자 이름*/
+    width:255px; height:35.59px;
+    font-size:36px; line-height:37px;
+    margin-top:45px;
+}
+
+.dealingcard-buyer>div:nth-child(3){ /*구매자 이메일*/
+    width:255px; height:35.59px;
+    font-size:24px; line-height:35.59px;
+    margin-top:26.1px;
+}
+
+.dealingcard-buyer>div:nth-child(4){/*구매자 핸드폰번호*/
+    width:255px; height:35.59px;
+    font-size:24px; line-height:35.59px;
+}
+
+.dealingcard-buyer>div:nth-child(5){ /*구매자 주소*/
+    width:255px; height:35.59px;
+    font-size:18px; line-height:35.59px;
+}
+
+/*판매자 카드*/
+.dealingcard-seller{   /*판매자 베이스 div*/
+    width:255px; height:446px;
+    background-color:var(--light-cyan); color:white;
+    flex-direction:column;  border-radius:4px; text-align:center;
+    margin-left:10px;
+}
+
+.dealingcard-seller>div:nth-child(1){   /*판매 상품 이미지*/
+    width:223px; height:170px;
+    background:url(img/cardimg.png);
+    margin:22px 16px 18px;
+}
+
+.dealingcard-seller>div:nth-child(2){   /*상품 제목*/
+    width:255px; height:25px;
+    font-size:24px; line-height:25px
+}
+
+.dealingcard-seller>div:nth-child(3){ /*판매자 정보 베이스 div*/
+    width:247px; height:120px;
+    display:flex;
+    margin-left:8px; margin-top:22px;
+}
+
+.dealingcard-seller>div:nth-child(3)>div:nth-child(1){ /*판매자 사진*/
+    width:120px; height:120px;
+    border-radius:50%; background:url(img/cardimg1.png);
+}
+
+.dealingcard-seller>div:nth-child(3)>div:nth-child(2){  /*판매자 이름*/
+    width:128.55px; height:120px;
+    font-size:36px; font-weight:bold; font-family:Roboto;
+}
+
+.dealingcard-seller>div:nth-child(4){ /*판매 등록일*/
+    margin-top:38.38px; font-size:18px;
+    font-weight:bold; font-family:Roboto;
+}
+
+/*메인 판매자 카드*/
+.dealingcard-main{
+    width:255px; height:320px; margin-left:10px;
+    display:flex; flex-direction:column; position:relative;
+    box-shadow:0px 4px 10px rgba(0, 0, 0, 0.1); border-radius: 8px;
+}
+
+/* 메인 판매자 카드 (기본 폰트) */
+.dealingcard-main-font{font-family:Roboto;}
+
+/*메인 판매자 카드 (상품 이미지)*/
+.dealingcard-main>div:first-child{width:255px; height:220px; background:url(img/cardimg3.png)}
+
+/*메인 판매자 카드 (판매자 정보 + 판매자 사진 div)*/
+.dealingcard-main-sellerInfo{width:245px; heght:39px; margin-left:10px; margin-top:5.5px; display:flex;}
+/*메인 판매자 카드 (판매자 사진 div)*/
+.dealingcard-main-sellerInfo>div:first-child{width:39px; height:39px; background:url(img/cardimg4.png); border-radius:50%;}
+/*메안 판매자 카드 (판매자 정보 div)*/
+.dealingcard-main-sellerInfo>div:last-child{display:flex; flex-direction:column; margin-left:11px; }
+/*메인 판매자 카드 (이름)*/
+.dealingcard-main-sellerInfo>div:last-child>:first-child{font-size:16px; font-weight:bold;}
+/*메인 판매자 카드 (학교)*/
+.dealingcard-main-sellerInfo>div:last-child>:last-child{font-size:12px; color:var(--dark-gray);}
+
+/*메인 판매자 카드 (상품 이름)*/
+.dealingcard-main>div:last-child{height:28px; line-height:28px; margin:17.5px; font-size:24px; font-weight:bold; text-align:center;}
+
+/*배송 완료*/
+.dealingcard-completed{
+    width:255px; height:214.5px;
+    position:absolute; text-align:center;
+    line-height:214.5px; font-size:36px; color:white;
+    background-color:rgba(0, 0, 0, 0.8);
+}
+
+/*카드 결제*/
+.card-payment{
+     width:159.41px; height:200px;
+     text-align:center;
+     background-color:var(--light-cyan); border-radius:2px; border:0;
+     margin-left:10px; padding:0;
+    }
+
+.card-payment>div:first-child{
+    width:159.41px; height:50.75px;
+    font-size:54px; color:var(--dark-blue);
+    margin:43.62px 0px 7.62px;
+}
+.card-payment>div:nth-child(2){
+    width:159.41px; height:auto;
+    font-size:22px; color:var(--light-red);
+}
+.card-payment>div:last-child{
+    width:159.41px; height:auto;
+    color:var(--dark-blue); font-size:36px;
+    margin:12.36px 0px 30px;
+}
+
+/*드림 페이*/
+.dream-payment{
+    width:160px; height:200px;
+    background-color:var(--light-cyan); border:0; border-radius:2px; outline:0;
+    text-align:center;
+    margin-left:10px; padding:0;
+}
+
+.dream-payment>div:first-child{
+    width:160px;
+    font-size:80px; color:white;
+    margin-top:27px;
+}
+.dream-payment>div:last-child{
+   font-size:36px; color:white;
+    margin-top:23px;
+}

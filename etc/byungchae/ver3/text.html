@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/079f1befc7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="team01.css">
+    <link rel="stylesheet" href="dreampicturesytle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<body>
+
+<!-- 구매자 카드-->
+<div class="dealingcard is_buyer">
+    <div style="margin-top:53px;"></div>
+    <div style="margin-top:45px;" class="has_font_36">Lim hyunhae</div>
+    <div style="margin-top:26px;" class="has_font-24">bitcamp@gmaile.com</div>
+    <div class="has_font_24" >010-1234-1234</div>
+    <div class="has_font_18">서울 마포구 백범로1길 10</div>
+    <button class='button is_primary'>구매내역</button>
+</div>
+
+<!--판매자 카드-->
+<div class="dealingcard is_seller">
+<div style="margin:22px 16px 18px;"></div>
+    <div>Darth Vader</div>
+    <div style="margin-top:22px;">
+        <div style="margin-left:8px;"></div>
+        <div style="margin-top:20px;" class="has_font_36">Jenny Kim</div>
+    </div>
+    <div style="margin-top:38px;" class="has_font_18">판매일: 2021-09-06-14:21</div>
+</div>
+
+<!--메인 판매자 카드-->
+<div class="main_dealingcard flex_column">
+    <div></div>
+    <div style="margin-top:6px;" class="dealingcard-main-sellerInfo">
+        <div style="margin-left:10px;"></div>
+        <div style="margin-left:11px;">
+            <div>Jenny Kim</div>
+            <div>bitcamp University</div>
+        </div>
+    </div>
+    <div style="margin-top:17px;">Darth Vader</div>
+</div>
+
+<!--메인 판매자 카드 배송 완료-->
+<div class="main_dealingcard flex_column">
+    <div></div>
+    <div class="dealingcard-completed">배송 완료</div>
+    <div style="margin-top:6px;" class="dealingcard-main-sellerInfo">
+        <div style="margin-left:10px;"></div>
+        <div style="margin-left:11px;">
+            <div>Jenny Kim</div>
+            <div>bitcamp University</div>
+        </div>
+    </div>
+    <div style="margin-top:17px;">Darth Vader</div>
+</div>
+
+<!--카드 결제 버튼-->
+<button class="icon_button is_card_payment">
+    <div style="margin:44px 0px 7.62px;"><i class="far fa-credit-card"></i></div>
+    <div><i class="fas fa-check"></i></div>
+    <div style="margin:12px 0px 30px;">카드결제</div>
+</button>
+
+<!--드림 페이 버튼-->
+<button class="icon_button is_dream_payment">
+    <div style="margin-top:27px;"><i class="fas fa-coins"></i></div>
+    <div style="margin-top:23px;">드림 페이</div>
+</button>
+
+<!--shopping page-->
+<div class="my_shopping_page">
+    <div>
+        <button class='button is_primary'>구매내역</button>
+        <button class='button is_primary'>판매내역</button>
+        <button class='button is_primary'>장바구니</button><br>
+    </div>
+    <div class="my_shopping_page_mid">
+        <button class='button is_round'><i class="fas fa-arrow-left fa-lg"></i></button>
+        <div class="main_dealingcard flex_column">
+                <div></div>
+                <div style="margin-top:6px;" class="dealingcard-main-sellerInfo">
+                    <div style="margin-left:10px;"></div>
+                    <div style="margin-left:11px;">
+                        <div>Jenny Kim</div>
+                        <div>bitcamp University</div>
+                    </div>
+                </div>
+                <div style="margin-top:17px;">Darth Vader</div>
+            </div>
+        <button class='button is_round'><i class="fas fa-arrow-right fa-lg"></i></button>
+    </div>
+    <div class="my_shopping_page_bottom">
+        <button class='button is_utility has_icon'><span>날짜 선택</span><i class="far fa-calendar-alt" style="padding-left: 60px"></i></button>
+        <button class='button is_utility has_icon' style="text-align: right;"><i class="fas fa-search"></i></button><br>
+    </div>
+</div>
+
+<!--마이페이지-->
+<div class="my_page">
+<header>마이 페이지</header>
+        <div style="margin-top:6px;" class="my_page_info">
+            <div style="margin-right:30px;"></div>
+            <div style="margin-top:15px;">
+                <div>Jenny Kim</div>
+                <div style="margin-top:15px;">bitcamp University</div>
+            </div>
+    </div>
+    <div style="margin-top:80px;">
+        <h2>배송지 <i class="fas fa-home"></i></h2>
+        <p>서울 마포구 백범로1길 10</p>
+        <h2>e-mail <i class="fas fa-envelope-square"></i></h2>
+        <p>bitcamp@gmail.com</p>
+        <h2>phone <i class="fas fa-phone"></i></h2>
+        <p>010-1234-1234</p>
+    </div>
+    <div style="margin-top:80px;">
+        <button class='button is_primary'>수정 하기</button>
+        <button class='button is_primary'>삭제 하기</button>
+    </div>
+</div>
+</body>
+</html>

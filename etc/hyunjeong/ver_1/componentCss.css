@@ -1,0 +1,194 @@
+:root {
+    /* Color */
+    --color-gray: #848484;
+    --color-alabaster: #F9F9F9;
+    --color-swiss-coffee: #E3D6D6;
+    --color-brandy-rose: #BC8484;
+    --color-puce: #CE9292;
+    --color-albescent-white: #F7E3DA;
+    --color-turbo: #FEE500;
+    --color-porcelain: #F3F7F7;
+    --color-aqua-island: #91D0D7CC;
+    --color-powder-blue: #ADDBE1;
+    --color-jagged-ice: #C8E7EB;
+    --color-chathams-blue: #17517E;
+
+    /*Font-size*/
+    --font-size-medium: 18px
+}
+
+@font-face {
+    font-family: 'BMHANNAPro';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: 'BMHANNAPro';
+}
+/*==================================input==================================*/
+option {
+    font-size: 15px;
+    color: black;
+}
+.title_box, .text_box, .select_box, .paintingInfo_box, .search_box{
+    border: 2px solid var( --color-jagged-ice);
+    border-radius: 8px;
+    font-size: 24px;
+    outline: none;
+}
+.select_box, .paintingInfo_box, .search_box{
+    padding-left: 20px;
+    color: gray;
+}
+.title_box {
+    padding-left: 20px;
+    line-height: 34px;
+    width: 500px;
+    height: 64px;
+}
+.select_box {
+    width: 255px;
+    height: 70px;
+    letter-spacing: 3px;
+}
+.text_box {
+    color: gray;
+    width: 256px;
+    height: 64px;
+    text-align: center;
+}
+
+.paintingInfo_box{
+    width: 539px;
+    height: 90px;
+}
+#search>input{
+    background-image: url(search.png);
+    background-position: 620px 15px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-color: var(--color-porcelain);
+}
+.search_box{
+    width: 637px;
+    height: 48px;
+}
+
+.complete_radio {
+    color: var(--color-chathams-blue);
+    font-size: 18px;
+}
+#login_btn{
+    background-color: var(--color-albescent-white);
+    color: white;
+    width: 350px;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+/*=======================================card=====================================*/
+#artist {
+    position: relative;
+    width: 445px;
+    height: 121px;
+}
+
+#artistImg {
+    position: absolute;
+    left: 17px;
+    width: 120px;
+    height: 120px;
+    border-radius: 70%;
+}
+
+#artistName {
+    left: 193px;
+    position: absolute;
+    width: 300px;
+    height: 121px;
+    font-size: 36px;
+}
+
+#artistCareer {
+    position: absolute;
+    top: 49px;
+    width: 200px;
+    height: 39px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+#seller {
+    position: relative;
+    width: 408px;
+    height: 120px;
+}
+
+#sellerImg {
+    position: absolute;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 70%;
+}
+
+#sellerName {
+    font-size: 25px;
+    position: absolute;
+    left: 133px;
+    width: 200px;
+    height: 30px;
+    color: var(--color-chathams-blue);
+}
+
+#sellerInfo {
+    font-size: 18px;
+    position: absolute;
+    top: 36px;
+    left: 133px;
+    width: 275px;
+    height: 74px;
+    list-style-type: none;
+    float: left;
+    color: gray;
+}
+
+#seller > ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/*====================헤드라인===================*/
+#headLine1 {
+    font-size: 48px;
+    width: 538px;
+    height: 240px;
+    text-align: center;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+}
+
+#headLine2 {
+    position: relative;
+    width: 445px;
+    height: 260px;
+}
+
+#headLine2 > div:first-child {
+    font-size: 58px;
+    line-height: 80px;
+    position: absolute;
+    width: 445px;
+    height: 160px;
+}
+
+#headLine2 > div:last-child {
+    font-size: 20px;
+    line-height: 30px;
+    position: absolute;
+    width: 380px;
+    height: 30px;
+    top: 190px;
+}

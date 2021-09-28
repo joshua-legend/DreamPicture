@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="team01.css">
+    <script src="https://kit.fontawesome.com/079f1befc7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<body>
+
+<!-- 구매자 카드-->
+<div class="dealingcard is_buyer">
+    <div style="margin-top:53px;"></div>
+    <div style="margin-top:45px;" class="has_font_36">Lim hyunhae</div>
+    <div style="margin-top:26px;" class="has_font-24">bitcamp@gmaile.com</div>
+    <div class="has_font_24" >010-1234-1234</div>
+    <div class="has_font_18">서울 마포구 백범로1길 10</div>
+    <button class='button is_primary'>구매내역</button>
+</div>
+
+<!--판매자 카드-->
+<div class="dealingcard is_seller">
+<div style="margin:22px 16px 18px;"></div>
+    <div>Darth Vader</div>
+    <div style="margin-top:22px;">
+        <div style="margin-left:8px;"></div>
+        <div style="margin-top:20px;" class="has_font_36">Jenny Kim</div>
+    </div>
+    <div style="margin-top:38px;" class="has_font_18">판매일: 2021-09-06-14:21</div>
+</div>
+
+<!--메인 판매자 카드-->
+<div class="main_dealingcard flex_column">
+    <div></div>
+    <div style="margin-top:6px;" class="dealingcard-main-sellerInfo">
+        <div style="margin-left:10px;"></div>
+        <div style="margin-left:11px;">
+            <div>Jenny Kim</div>
+            <div>bitcamp University</div>
+        </div>
+    </div>
+    <div style="margin-top:17px;">Darth Vader</div>
+</div>
+
+<!--메인 판매자 카드 배송 완료-->
+<div class="main_dealingcard flex_column">
+    <div></div>
+    <div class="dealingcard-completed">배송 완료</div>
+    <div style="margin-top:6px;" class="dealingcard-main-sellerInfo">
+        <div style="margin-left:10px;"></div>
+        <div style="margin-left:11px;">
+            <div>Jenny Kim</div>
+            <div>bitcamp University</div>
+        </div>
+    </div>
+    <div style="margin-top:17px;">Darth Vader</div>
+</div>
+
+<!--카드 결제 버튼-->
+<button class="icon_button is_card_payment">
+    <div style="margin:44px 0px 7.62px;"><i class="far fa-credit-card"></i></div>
+    <div><i class="fas fa-check"></i></div>
+    <div style="margin:12px 0px 30px;">카드결제</div>
+</button>
+
+<!--드림 페이 버튼-->
+<button class="icon_button is_dream_payment">
+    <div style="margin-top:27px;"><i class="fas fa-coins"></i></div>
+    <div style="margin-top:23px;">드림 페이</div>
+</button>
+
+<!--마이페이지-->
+<div class="my_page">
+    <!--마이페이지 top-->
+    <div>
+        <button class='button is_primary'>구매내역</button>
+        <button class='button is_primary'>판매내역</button>
+        <button class='button is_primary'>장바구니</button><br>
+    </div>
+    <!--마이페이지 mid-->
+    <div class="my_page_mid">
+        <button class='button is_round'><i class="fas fa-arrow-left fa-lg"></i></button>
+        <div class="main_dealingcard flex_column">
+            <div></div>
+            <div class="dealingcard-completed">배송 완료</div>
+            <div class="dealingcard-main-sellerInfo">
+                <div></div>
+                <div>
+                    <div>Jenny Kim</div>
+                    <div>bitcamp University</div>
+                </div>
+            </div>
+            <div>Darth Vader</div>
+        </div>
+        <button class='button is_round'><i class="fas fa-arrow-right fa-lg"></i></button>
+    </div>
+    <!--마이페이지 bottom-->
+    <div class="my_page_bottom">
+        <button class='button is_utility has_icon'><span>날짜 선택</span><i class="far fa-calendar-alt" style="padding-left: 60px"></i></button>
+        <button class='button is_utility has_icon' style="text-align: right;"><i class="fas fa-search"></i></button><br>
+    </div>
+</div>
+
+</body>
+</html>

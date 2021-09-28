@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'BMHANNAPro';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+img{max-widht:100%; height: auto;}
+:root {
+    /* Color */
+    --color-gray: #848484;
+    --color-alabaster: #F9F9F9;
+    --color-swiss-coffee: #E3D6D6;
+    --color-brandy-rose:#BC8484;
+    --color-puce: #CE9292;
+    --color-albescent-white: #F7E3DA;
+    --color-turbo: #FEE500;
+    --color-porcelain: #F3F7F7;
+    --color-aqua-island: #91D0D7CC;
+    --color-powder-blue: #ADDBE1;
+    --color-jagged-ice: #C8E7EB;
+    --color-chathams-blue: #17517E;
+    --color-black:#000000;
+    --color-white:#ffffff;
+    --light-cyan : #91D0D7;
+    --bright-scarlt: #F7E3DA;
+    --light-red : #CE9292;
+    --dark-blue : #365E75;
+    --dark-gray : #828282;
+
+
+    /*Font-size*/
+    --font-size-12: 12px;
+    --font-size-14: 14px;
+    --font-size-16: 16px;
+    --font-size-18: 18px;
+    --font-size-22: 22px;
+    --font-size-24: 24px;
+    --font-size-36: 36px;
+    --font-size-54: 54px;
+}
+
+.has_font_18{font-size:18px;}
+.has_font_24{font-size:24px;}
+.has_font_36{font-size:36px;}
+
+*{font-family: 'BMHANNAPro';}
+
+/*거래카드 베이스*/
+.dealingcard{width:255px; height:446px; border-radius:4px; color:white; text-align:center;}
+.dealingcard>div{display:inline-block;}
+
+/*구매자 카드*/
+.is_buyer{background-color: var(--bright-scarlt);}
+.is_buyer>div:not(.is_buyer div:first-child){width:255px; height:36px; line-height:36px;}
+.is_buyer>div:first-child{width:125px; height:125px; border-radius:50%; background:url(../img/cardimg2.png);}
+
+/*판매자 카드*/
+.is_seller{background-color:var(--light-cyan);}
+.is_seller>div:not(.is_seller div:first-child){width:255px;}
+.is_seller>div:first-child{width:223px; height:170px; background:url("../img/cardimg.png");}
+.is_seller>div:nth-child(2){height:25px; font-size:var(--font-size-24); line-height:25px;}
+.is_seller>div:nth-child(3){height:120px; display:flex;}
+.is_seller>div:nth-child(3)>div:first-child{width:120px; border-radius:50%; background:url(../img/cardimg1.png);}
+.is_seller>div:nth-child(3)>div:last-child{width:129px; height:80px; font-weight:bold;}
+.is_seller>div:last-child{font-weight:bold;}
+
+/*메인 판매자 카드*/
+.flex_column{display:flex; flex-direction:column;}
+.main_dealingcard{width:255px; height:320px; position:relative;box-shadow:0px 4px 10px rgba(0, 0, 0, 0.1); border-radius: 8px;}
+.main_dealingcard>div{width:255px; text-align:center;}
+.main_dealingcard>div:first-child{height:220px; background:url(../img/cardimg3.png)}
+.dealingcard-main-sellerInfo{margin-top:6px; display:flex;}
+.dealingcard-main-sellerInfo>div:first-child{width:39px; height:39px; background:url(../img/cardimg4.png); border-radius:50%;}
+.dealingcard-main-sellerInfo>div:last-child>:first-child{text-align:left; font-size:var(--font-size-16); font-weight:bold;}
+.dealingcard-main-sellerInfo>div:last-child>:last-child{font-size:var(--font-size-12); color:var(--dark-gray);}
+.main_dealingcard>div:last-child{line-height:28px; font-size:var(--font-size-24); font-weight:bold;}
+.dealingcard-completed{height:220px; position:absolute; line-height:220px; font-size:var(--font-size-36); color:white;background-color:rgba(0, 0, 0, 0.8);}
+
+/*아이콘 버튼 베이스*/
+.icon_button{width:159px; height:200px; text-align:center; padding:0; border-radius:2px; border:0; background-color:var(--light-cyan);}
+
+/*카드 결제 버튼*/
+.is_card_payment>div{width:159px; height:auto; color:var(--dark-blue);}
+.is_card_payment>div:first-child{font-size:var(--font-size-54);}
+.is_card_payment>div:nth-child(2){font-size:var(--font-size-22); color:var(--light-red);}
+.is_card_payment>div:last-child{font-size:var(--font-size-36);}
+
+/*드림 페이 버튼*/
+.is_dream_payment>div{width:160px; height:auto; color:white;}
+.is_dream_payment>div:first-child{font-size:80px;}
+.is_dream_payment>div:last-child{font-size:36px;}
